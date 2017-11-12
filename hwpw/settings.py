@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'hwpw.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'hwpw',  # your mysql database name.
+        'USER': 'root', # your mysql user for the database.
+        'PASSWORD': '', # password for user.
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
