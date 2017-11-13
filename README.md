@@ -1,5 +1,8 @@
 # hwpw
 
+## Install Packages.
+pip install djangorestframework
+
 ## Migration
 
 ### Create migration.

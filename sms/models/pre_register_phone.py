@@ -10,6 +10,6 @@ class PreRegisterPhone(models.Model):
         ('DONE', 'DONE'),
     )
     phone_text = models.CharField(max_length=200)
-    created_date = models.DateTimeField('date published')
+    created_date = models.DateTimeField(auto_now_add=True)
     status = models.CharField(
         max_length=10, choices=STATUS_CHOICES, default='NEW')
